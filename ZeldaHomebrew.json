@@ -989,6 +989,10 @@
         }
       ],
       "miscTags": ["MW", "RW"],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/M-Schuhmacher/ZeldaHomebrew/bc47df859dad83b0b24ca4f19da4d219dc314077/Assets/Acheman_token.png"
+      },
       "damageTags": ["F"]
     }
   ]
