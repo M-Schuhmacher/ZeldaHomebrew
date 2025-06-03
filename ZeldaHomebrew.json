@@ -984,7 +984,7 @@
         {
           "name": "Firebolt",
           "entries": [
-            "{@atk rw} {@hit 2} to hit, range 30/30 ft., one target. {@h}8 ({@damage 1d10}) fire damage."
+            "{@atk rw} {@hit 2} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) fire damage."
           ]
         }
       ],
