@@ -1,0 +1,995 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "SleepycobblerTLoZSourceBook",
+        "abbreviation": "STLoZSB",
+        "full": "Sleepycobbler's The Legend of Zelda Source Book",
+        "authors": ["Sleepycobbler"],
+        "convertedBy": ["Sleepycobbler"],
+        "version": "1.0.0",
+        "color": "ffffff"
+      }
+    ],
+    "edition": "classic",
+    "status": "wip",
+    "dateAdded": 1748637003,
+    "dateLastModified": 1748637003
+  },
+  "race": [
+    {
+      "name": "Deku (Forest)",
+      "source": "STLoZSB",
+      "creatureTypes": ["fey", "plant"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["S"],
+      "speed": 30,
+      "darkvision": 60,
+      "traitTags": ["Language Proficiency"],
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Hybrid Nature",
+          "entries": ["You are a fey and a plant"]
+        },
+        {
+          "type": "entries",
+          "name": "Barkskin",
+          "entries": [
+            "Your skin is literally bark. Your AC can't be lower than 15, regardless of what kind of armor you are wearing. If your AC isn't higher than 15, you are vulnerable to fire damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Water Hop",
+          "entries": [
+            "If you use your action to Dash, you can traverse over the surface of water or similar liquids until the end of your turn. If your turn ends while you are over a liquid, you will submerge into it as normal."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Business-Minded",
+          "entries": [
+            "You have advantage on charisma (persuasion) checks to negotiate prices in your favor. You can use this feature a number of times equal to your proficiency bonus, the charges recharge on a short rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Learned Trade",
+          "entries": [
+            "You gain proficiency in any one artisan's tool, any one musical instrument, the herbalism kit, and the Nature skill."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deku (Swamp)",
+      "source": "STLoZSB",
+      "creatureTypes": ["fey", "plant"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["S"],
+      "speed": 30,
+      "darkvision": 60,
+      "traitTags": ["Language Proficiency"],
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Hybrid Nature",
+          "entries": ["You are a fey and a plant"]
+        },
+        {
+          "type": "entries",
+          "name": "Barkskin",
+          "entries": [
+            "Your skin is literally bark. Your AC can't be lower than 15, regardless of what kind of armor you are wearing. If your AC isn't higher than 15, you are vulnerable to fire damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Water Hop",
+          "entries": [
+            "If you use your action to Dash, you can traverse over the surface of water or similar liquids until the end of your turn. If your turn ends while you are over a liquid, you will submerge into it as normal."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Deku Resilience",
+          "entries": [
+            "You have advantage on saving throws against poison, and you have resistance to poison damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Forest Camouflage",
+          "entries": [
+            "You have advantage on Dexterity (Stealth) checks made to hide in forests, woodlands, or other terrain of abundant foliage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gerudo",
+      "source": "STLoZSB",
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": 30,
+      "traitTags": ["Weapon Proficiency"],
+      "weaponProficiencies": [
+        { "scimitar|phb": true, "spear|phb": true, "shortbow|phb": true }
+      ],
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "acrobatics",
+              "arcana",
+              "athletics",
+              "intimidation",
+              "stealth",
+              "survival"
+            ],
+            "count": 2
+          }
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "navigator's tools",
+              "thieves' tools",
+              "musical instrument"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Ancestral Arms",
+          "entries": [
+            "You are proficient with the scimitar, the spear, and the shortbow. If you would otherwise gain proficiency with one of these weapons, you instead gain a +1 bonus on damage rolls with that weapon."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Din's Favor",
+          "entries": [
+            "You have an extra edge in your martial or magical prowess. You gain your choice of either the Martial Adept feat or the Metamagic adept feat."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Goron (Mountain)",
+      "source": "STLoZSB",
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": 30,
+      "darkvision": 60,
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "resist": ["fire"],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Boulder Rolling",
+          "entries": [
+            "As an action, you can forgo your movement this turn to curl up into a ball and begin rolling in a straight line up to twice your movement speed. Creatures caught in this line must make a dex save (save DC equals 8 + Strength bonus + proficiency bonus). On a failed save, they take 2d6 bludgeoning damage, and half as much on a successful save. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. You can use this ability a number of times equal to your proficiency bonus, and you regain charges when you complete a short or long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Weighted",
+          "entries": [
+            "You sink to the bottom of any body of water you enter. You have disadvantage on ability checks and saving throws made to keep your balance or avoid being knocked prone."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Goron Physiology",
+          "entries": [
+            "You do not eat food like plants or meat, instead you eat rocks. The kind of rock depends upon your subrace. Magma and Mountain gorons prefer rocks made near volcanoes, While snow gorons prefer rocks that were cut from glaciers, or gems. A gem can sustain a goron for a long amount of time, depending on the price."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Mountain Fortitude",
+          "entries": [
+            "When you make a Constitution saving throw, you can do so with advantage. Once you use this feature, you must finish a short or long rest before you use it again."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Goron (Snow)",
+      "source": "STLoZSB",
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": 30,
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "resist": ["fire"],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Boulder Rolling",
+          "entries": [
+            "As an action, you can forgo your movement this turn to curl up into a ball and begin rolling in a straight line up to twice your movement speed. Creatures caught in this line must make a dex save (save DC equals 8 + Strength bonus + proficiency bonus). On a failed save, they take 2d6 bludgeoning damage, and half as much on a successful save. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. You can use this ability a number of times equal to your proficiency bonus, and you regain charges when you complete a short or long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Weighted",
+          "entries": [
+            "You sink to the bottom of any body of water you enter. You have disadvantage on ability checks and saving throws made to keep your balance or avoid being knocked prone."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Goron Physiology",
+          "entries": [
+            "You do not eat food like plants or meat, instead you eat rocks. The kind of rock depends upon your subrace. Magma and Mountain gorons prefer rocks made near volcanoes, While snow gorons prefer rocks that were cut from glaciers, or gems. A gem can sustain a goron for a long amount of time, depending on the price."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Improved Boulder Rolling",
+          "entries": [
+            "Being a snow goron, you have a better grasp of how to control your boulder form. You may use a bonus action to curl up into this form, or to leave it. While in this form, your speed is doubled. Additionally, while moving in this form, the vibrations of your movement give you a limited tremorsense that allows you to see obstacles in front of you in a 30 foot cone. While in this form, you cannot cast spells or take any other action other than the dash, hide, or disengage action."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ice Tempered",
+          "entries": [
+            "When you take cold damage, you may use your reaction to gain resistance to cold damage until the end of your next turn. You can use this ability a number of times equal to your proficiency bonus, the charges of which recharge on a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Goron (Magma)",
+      "source": "STLoZSB",
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": 30,
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "resist": ["fire"],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Boulder Rolling",
+          "entries": [
+            "As an action, you can forgo your movement this turn to curl up into a ball and begin rolling in a straight line up to twice your movement speed. Creatures caught in this line must make a dex save (save DC equals 8 + Strength bonus + proficiency bonus). On a failed save, they take 2d6 bludgeoning damage, and half as much on a successful save. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. You can use this ability a number of times equal to your proficiency bonus, and you regain charges when you complete a short or long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Goron Physiology",
+          "entries": [
+            "You do not eat food like plants or meat, instead you eat rocks. The kind of rock depends upon your subrace. Magma and Mountain gorons prefer rocks made near volcanoes, While snow gorons prefer rocks that were cut from glaciers, or gems. A gem can sustain a goron for a long amount of time, depending on the price."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Goron Wrestling",
+          "entries": [
+            "You are proficient in athletics, and attempts to grapple a creature are made with advantage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Heat Resilience",
+          "entries": [
+            "Non-Magical fire and heat has no effect on you. In addition, when a fire attack would force you to make a dexterity saving throw, you may instead make a Constitution saving throw. You may use this feature a number of times equal to your proficiency bonus. You regain all expended uses of this feature at the end of your next long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hylian",
+      "source": "STLoZSB",
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": 30,
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "any": 2
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Favored of Hylia",
+          "entries": [
+            "You gain proficiency in one extra saving throw of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Magically Sensitive",
+          "entries": [
+            "You can cast the detect magic spell. Once you use this ability, you cannot do so again until after a short or long rest. You can also cast detect magic using spell slots you have."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kokiri",
+      "source": "STLoZSB",
+      "creatureTypes": ["fey"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["S"],
+      "speed": 30,
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "nature": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Eternal Youth",
+          "entries": [
+            "You do not age, and are immune to any magical effect that would cause you to age."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Naturalist",
+          "entries": [
+            "You are proficient in the Nature skill. Additionally, you know the druidcraft cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spells when you cast it with this trait (choose when you select this race)."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fairy Guide",
+          "entries": [
+            "You have a fairy of navigation as a loyal friend who is eager to follow and aid you. Its hit points are fully replenished whenever it completes a short rest. Your fairy acts independently of you, but it generally obeys your wishes. In combat, it rolls its own initiative and acts on its own turn. It can't attack, but it can take other actions as normal. This fairy counts as your familiar, and it cannot be changed or transformed by find familiar or similar spell. If you lose your fairy, you can resurrect it with a 1 hour ritual."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fairy Protection",
+          "entries": [
+            "Your fairy can hide on your person and moves with you while it does so. While hiding in this manner, it has total cover."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rito (Coastal)",
+      "source": "STLoZSB",
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": 35,
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "perception": true,
+          "survival": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Labored Flight",
+          "entries": [
+            "As an action, you gain a flying speed equal to your movement speed until the start of your next turn. You can maintain uninterrupted flight by using this action on consecutive turns. While flying, you cannot attack or cast spells with somatic components. You cannot use this feature while wearing medium or heavy armor"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Navigation",
+          "entries": [
+            "Coastal rito are unusually skilled at maintaining direction and creating mental maps. You have advantage on Wisdom (Survival) checks to navigate or avoid becoming lost."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Keen Senses",
+          "entries": [
+            "You are proficient in the Perception and Survival skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Blessed of The Wind Gods",
+          "entries": [
+            "You know the message cantrip. Once you reach 3rd level, you can cast the longstrider spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the sending spell once per day with this trait; you regain the ability to cast it when you finish a long rest. You can also cast these using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Extra Language",
+          "entries": ["You learn 1 extra language of your choice."]
+        }
+      ]
+    },
+    {
+      "name": "Rito (Highland)",
+      "source": "STLoZSB",
+      "resist": ["cold"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": 30,
+      "weaponProficiencies": [{ "shortbow|phb": true, "longbow|phb": true }],
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "acrobatics": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Labored Flight",
+          "entries": [
+            "As an action, you gain a flying speed equal to your movement speed until the start of your next turn. You can maintain uninterrupted flight by using this action on consecutive turns. While flying, you cannot attack or cast spells with somatic components. You cannot use this feature while wearing medium or heavy armor"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ancestral Arms",
+          "entries": [
+            "You are proficient with the shortbow and the longbow. If you would otherwise gain proficiency with one of these weapons, you instead gain a +1 bonus on damage rolls with that weapon."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Natural Acrobat",
+          "entries": ["You are proficient in the Acrobatics skill."]
+        },
+        {
+          "type": "entries",
+          "name": "Altitude Adept",
+          "entries": [
+            "You have resistance to cold damage. You're also acclimated to high altitude, including elevations above 20,000 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Rito Sharpshooter",
+          "entries": [
+            "When you use your action to perform your Labored Flight, you can also use a bonus action to make one physical ranged or melee attack. The beating of your wings ceases while you attack, but you strike so swiftly your flight is not significantly interrupted. Starting from 3rd level, you can instead perform your Labored Flight as a bonus action. When you use this feature as a bonus action, you may use your action to attack or cast a spell. You still cannot cast spells with somatic components."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sheikah",
+      "source": "STLoZSB",
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": 35,
+      "darkvision": 60,
+      "skillProficiencies": [
+        {
+          "stealth": true,
+          "choose": {
+            "from": ["religion", "history"],
+            "count": 1
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": ["Your speed is 35 ft."]
+        },
+        {
+          "type": "entries",
+          "name": "Order of Truth",
+          "entries": [
+            "The sheikah method of disseminating knowledge is still strong today, through gossip stones. You have a natural ability to sense objects nearby that have been implanted with the spell magic mouth. In addition, you can cast magic mouth as a ritual at will, without material components. The size of the message depends on the size of the stone."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Sheikah Magic",
+          "entries": [
+            "You know the Minor Illusion cantrip. Once you reach 3rd level, you can cast the Disguise Self spell once with this trait and regain the ability to do so when you finish a long rest. Once you reach 5th level, you can also cast the Misty step spell once with this trait and regain the ability to do so when you finish a long rest. You can also cast these using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Shadow Arts",
+          "entries": ["You have proficiency in the stealth skill."]
+        },
+        {
+          "type": "entries",
+          "name": "Natural Researcher",
+          "entries": ["You gain proficiency in Religion or History."]
+        }
+      ]
+    },
+    {
+      "name": "Twilii",
+      "source": "STLoZSB",
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": 30,
+      "darkvision": 120,
+      "resist": ["necrotic"],
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Superior Darkvision",
+          "entries": [
+            "You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Majora's Touch",
+          "entries": ["You gain the Eldritch Adept Feat."]
+        },
+        {
+          "type": "entries",
+          "name": "Twilit Magic",
+          "entries": [
+            "You know one cantrip and one 1st level spell of your choice from the sorcerer spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Twilit Resilience",
+          "entries": [
+            "Your people have adapted and evolved to the hardships of the Twilight Realm. You have resistance to necrotic damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zora (River)",
+      "source": "STLoZSB",
+      "resist": ["cold"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": {
+        "walk": 30,
+        "swim": true
+      },
+      "darkvision": 60,
+      "weaponProficiencies": [
+        {
+          "trident|phb": true,
+          "spear|phb": true,
+          "light crossbow|phb": true,
+          "net|phb": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Aquatic Physiology",
+          "entries": [
+            "You can breathe underwater. Additionally, You have darkvision up to 120 feet underwater. You have resistance to cold damage, and you ignore any of the drawbacks caused by a deep, underwater environment."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Natural Affinity",
+          "entries": [
+            "You know one cantrip of your choice from the druid or cleric spell list. Once you reach 3rd level, you learn one of the following: Absorb Elements, Cure Wounds, or Create or Destroy Water. You may cast this spell once per day with this trait; you regain the ability to cast it when you finish a long rest. You can also cast it using spell slots you have of the appropriate level. Once you reach 5th level, you learn one of the following: Pass without a Trace, Lesser Restoration, or Summon Beast (Water Option). You may cast this spell once per day with this trait; you regain the ability to cast it when you finish a long rest. You can also cast it using spell slots you have of the appropriate level."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ancestral Arms",
+          "entries": [
+            "You gain proficiency with tridents, spears, light crossbows, and nets. If you would otherwise gain proficiency with these weapons, you instead gain a +1 bonus on damage rolls with that weapon."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Extra Language",
+          "entries": ["You learn 1 additional language of your choice."]
+        }
+      ]
+    },
+    {
+      "name": "Zora (Ocean)",
+      "source": "STLoZSB",
+      "resist": ["cold"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        }
+      ],
+      "size": ["M"],
+      "speed": {
+        "walk": 30,
+        "swim": true
+      },
+      "darkvision": 60,
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Aquatic Physiology",
+          "entries": [
+            "You can breathe underwater. Additionally, You have darkvision up to 120 feet underwater. You have resistance to cold damage, and you ignore any of the drawbacks caused by a deep, underwater environment."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Song of the Sea",
+          "entries": [
+            "As an action, you sing a magical melody. Every creature of your choice within 300 feet of you that can hear the song is affected by it. You must take a bonus action on your subsequent turns to continue singing. You can stop singing at any time. The song ends if you are incapacitated. You may use this ability a number of times equal to your proficiency bonus per long rest. Choose one of the two options:",
+            "1. Siren Song. Each target must make a wisdom saving throw (save DC equals 8 + Charisma bonus + proficiency bonus). On a failed save, the creature charmed until the song ends. While charmed, a target is incapacitated and ignores any other magical song. If the charmed target is more than 5 feet away from you, the target must move on its turn toward you by the most direct route. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than you, a target can repeat the saving throw. A creature can also repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful, the effect ends on it. A target that successfully saves is immune to your song for the next 24 hours.",
+            "2. Song of Inspiration. Choose a saving throw ability you are proficient in. Each target adds your proficiency bonus when making a saving throw that uses that ability."
+          ]
+        }
+      ]
+    }
+  ],
+  "monster": [
+    {
+      "name": "Ache",
+      "size": ["M"],
+      "type": "fiend",
+      "source": "SleepycobblersTheLegendofZeldaSourceBook",
+      "alignment": ["L", "E"],
+      "ac": [16],
+      "hp": {
+        "formula": "8d8 + 8",
+        "average": 44
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 30
+      },
+      "str": 9,
+      "dex": 17,
+      "con": 12,
+      "int": 11,
+      "wis": 12,
+      "cha": 15,
+      "passive": 13,
+      "cr": "2",
+      "senses": ["darkvision 60 ft."],
+      "senseTags": ["D"],
+      "languages": ["Infernal", "Any One Language"],
+      "languageTags": ["I"],
+      "skill": {
+        "deception": "+4",
+        "insight": "+3",
+        "perception": "+3"
+      },
+      "resist": ["necrotic"],
+      "trait": [
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The Ache can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+          ]
+        },
+        {
+          "name": "Ambusher",
+          "entries": [
+            "The Ache has advantage on attack rolls against any creature it has {@status surprised|XPHB}."
+          ]
+        },
+        {
+          "name": "Surprise Attack",
+          "entries": [
+            "If the Ache surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 ({@damage 3d6}) damage from the attack."
+          ]
+        }
+      ],
+      "traitTags": ["Ambusher", "Shapechanger"],
+      "action": [
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) damage."
+          ]
+        },
+        {
+          "name": "Firebolt",
+          "entries": [
+            "{@atk rw} {@hit 2} to hit, range 30/30 ft., one target. {@h}8 ({@damage 1d10}) fire damage."
+          ]
+        }
+      ],
+      "miscTags": ["MW", "RW"],
+      "damageTags": ["F"]
+    }
+  ]
+}
