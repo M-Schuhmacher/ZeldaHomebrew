@@ -921,79 +921,272 @@
   ],
   "monster": [
     {
-      "name": "Ache",
-      "size": ["M"],
-      "type": "fiend",
-      "source": "SleepycobblersTheLegendofZeldaSourceBook",
-      "alignment": ["L", "E"],
-      "ac": [16],
-      "hp": {
-        "formula": "8d8 + 8",
-        "average": 44
-      },
-      "speed": {
-        "walk": 30,
-        "fly": 30
-      },
-      "str": 9,
-      "dex": 17,
-      "con": 12,
-      "int": 11,
-      "wis": 12,
-      "cha": 15,
-      "passive": 13,
-      "cr": "2",
-      "senses": ["darkvision 60 ft."],
-      "senseTags": ["D"],
-      "languages": ["Infernal", "Any One Language"],
-      "languageTags": ["I"],
-      "skill": {
-        "deception": "+4",
-        "insight": "+3",
-        "perception": "+3"
-      },
-      "resist": ["necrotic"],
-      "trait": [
-        {
-          "name": "Shapechanger",
-          "entries": [
-            "The Ache can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
-          ]
-        },
-        {
-          "name": "Ambusher",
-          "entries": [
-            "The Ache has advantage on attack rolls against any creature it has {@status surprised|XPHB}."
-          ]
-        },
-        {
-          "name": "Surprise Attack",
-          "entries": [
-            "If the Ache surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 ({@damage 3d6}) damage from the attack."
-          ]
-        }
-      ],
-      "traitTags": ["Ambusher", "Shapechanger"],
-      "action": [
-        {
-          "name": "Claw",
-          "entries": [
-            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) damage."
-          ]
-        },
-        {
-          "name": "Firebolt",
-          "entries": [
-            "{@atk rw} {@hit 2} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) fire damage."
-          ]
-        }
-      ],
-      "miscTags": ["MW", "RW"],
-      "tokenHref": {
-        "type": "external",
-        "url": "https://raw.githubusercontent.com/M-Schuhmacher/ZeldaHomebrew/bc47df859dad83b0b24ca4f19da4d219dc314077/Assets/Acheman_token.png"
-      },
-      "damageTags": ["F"]
-    }
+			"name": "Ache",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"S"
+			],
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "9d8",
+				"average": 40
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 6,
+			"dex": 15,
+			"con": 10,
+			"int": 11,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"Infernal",
+				"Any One Language"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The Ache can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The Ache has advantage on attack rolls against any creature it has {@status surprised|XPHB}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/M-Schuhmacher/ZeldaHomebrew/bc47df859dad83b0b24ca4f19da4d219dc314077/Assets/Ache_token.png"
+			},
+			"traitTags": [
+				"Ambusher",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"I"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Acheman",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "8d8 + 8",
+				"average": 44
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 9,
+			"dex": 17,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 15,
+			"skill": {
+				"deception": "+4",
+				"insight": "+3",
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"Infernal",
+				"Any One Language"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The Ache can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The Ache has advantage on attack rolls against any creature it has {@status surprised|XPHB}."
+					]
+				},
+				{
+					"name": "Surpise Attack",
+					"entries": [
+						"If the Ache surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 ({@damage 3d6}) damage from the attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Firebolt",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 30/30 ft., one target. {@h}8 ({@damage 1d10}) fire damage."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/M-Schuhmacher/ZeldaHomebrew/bc47df859dad83b0b24ca4f19da4d219dc314077/Assets/Acheman_token.png"
+			},
+			"traitTags": [
+				"Ambusher",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"I"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Ampilus",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "10d10 + 20",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 14,
+			"int": 5,
+			"wis": 15,
+			"cha": 9,
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"lightning"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the ampilus moves at least 10 feet straight toward a target and then hits it with its discharge on the same turn, the target takes an extra 9 ({@damage 2d8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Discharge",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 4}) lightning damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/M-Schuhmacher/ZeldaHomebrew/bc47df859dad83b0b24ca4f19da4d219dc314077/Assets/Ampilus_token.png"
+			},
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"L"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		}
   ]
 }
