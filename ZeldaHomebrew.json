@@ -920,7 +920,7 @@
     }
   ],
   "monster": [
-    {
+		{
 			"name": "Ache",
 			"source": "SleepycobblersTheLegendofZeldaSourceBook",
 			"size": [
@@ -1109,6 +1109,373 @@
 			]
 		},
 		{
+			"name": "Adult Aquamentus",
+			"shortName": "Aquamentus",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				19
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 23,
+			"dex": 12,
+			"con": 21,
+			"int": 18,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"dex": "+6",
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"deception": "+8",
+				"insight": "+7",
+				"perception": "+7",
+				"persuasion": "+8",
+				"stealth": "+6"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Hylian",
+				"Draconic"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The aquamentus casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 21}):"
+					],
+					"daily": {
+						"3": [
+							"{@spell detect magic|XPHB}",
+							"{@spell dispel magic|XPHB}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The aquamentus can breathe air and water."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the aquamentus moves at least 10 feet straight toward a creature and then hits it with a gore attack on the same turn, that target takes an extra 11 ({@damage 2d10}) piercing damage and must succeed on a {@dc 18} Strength saving throw or be pushed 10 feet away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the aquamentus fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The aquamentus can use its Frightful Presence. It then makes three attacks: one with its bite or gore and two with its claws."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, plus 7 ({@damage 2d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, plus 7 ({@damage 2d6}) force damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Fire Rays {@recharge 5}",
+					"entries": [
+						"{@atk rs} {@hit 11} to hit, range 120ft. The aquamentus creates three rays of fire and hurls them at targets within range. The aquamentus can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 21({@damage 6d6}) fire damage."
+					]
+				},
+				{
+					"name": "Frightful Presence (Dragon)",
+					"entries": [
+						"Each creature of the aquamentus's choice that is within 120 feet of the aquamentus and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the aquamentus's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The aquamentus Can take 3 Legendary Actions, choosing from the options below. Only one legendary action can be used at a time, and only at the end of another creature's turn. Spent legendary Actions are regained at the start of each turn."
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The aquamentus makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The aquamentus makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack",
+					"entries": [
+						"(Costs 2 Actions): The aquamentus beats its wings. Each creature within 15 ft. of the aquamentus must succeed on a {@dc 19} Dexterity saving throw or take 13 ({@damage 2d6 + 6}) bludgeoning damage and be knocked {@condition prone}. The aquamentus can then fly up to half its flying speed."
+					]
+				}
+			],
+			"dragonAge": "adult",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"O",
+				"P",
+				"R",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RA",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Adult Argorok",
+			"shortName": "Argorok",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				19
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 23,
+			"dex": 12,
+			"con": 21,
+			"int": 18,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"dex": "+6",
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"insight": "+7",
+				"perception": "+7",
+				"persuasion": "+8",
+				"stealth": "+6",
+				"intimidation": "+8"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Hylian",
+				"Draconic"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The argorok can breathe air and water."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the argorok fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The argorok can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, plus 7 ({@damage 2d6}) force damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Twilit Fire Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales fire in a 60-foot cone. Each creature in that area must make a {@dc 21} Dexterity saving throw, taking 31 ({@damage 9d6}) fire damage and 31 ({@damage 9d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Frightful Presence (Dragon)",
+					"entries": [
+						"Each creature of the argorok's choice that is within 120 feet of the argorok and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the argorok's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The argorok Can take 3 Legendary Actions, choosing from the options below. Only one legendary action can be used at a time, and only at the end of another creature's turn. Spent legendary Actions are regained at the start of each turn."
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The argorok makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The argorok makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack",
+					"entries": [
+						"(Costs 2 Actions): The argorok beats its wings. Each creature within 15 ft. of the argorok must succeed on a {@dc 19} Dexterity saving throw or take 13 ({@damage 2d6 + 6}) bludgeoning damage and be knocked {@condition prone}. The argorok can then fly up to half its flying speed."
+					]
+				}
+			],
+			"dragonAge": "adult",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N",
+				"O",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
 			"name": "Ampilus",
 			"source": "SleepycobblersTheLegendofZeldaSourceBook",
 			"size": [
@@ -1166,7 +1533,7 @@
 			],
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/M-Schuhmacher/ZeldaHomebrew/bc47df859dad83b0b24ca4f19da4d219dc314077/Assets/Ampilus_token.png"
+				"url": "https://raw.githubusercontent.com/M-Schuhmacher/ZeldaHomebrew/refs/heads/main/Assets/Ampilus_token.png"
 			},
 			"traitTags": [
 				"Charge"
@@ -1187,6 +1554,856 @@
 			"savingThrowForced": [
 				"strength"
 			]
+		},
+		{
+			"name": "Ancient Aquamentus",
+			"shortName": "Aquamentus",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				21
+			],
+			"hp": {
+				"formula": "22d20 + 154",
+				"average": 385
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 27,
+			"dex": 12,
+			"con": 25,
+			"int": 20,
+			"wis": 17,
+			"cha": 19,
+			"save": {
+				"dex": "+8",
+				"con": "+14",
+				"wis": "+10",
+				"cha": "+11"
+			},
+			"skill": {
+				"deception": "+11",
+				"insight": "+10",
+				"perception": "+10",
+				"persuasion": "+11",
+				"stealth": "+8"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"languages": [
+				"Hylian",
+				"Draconic"
+			],
+			"cr": "22",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The aquamentus casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 21}):"
+					],
+					"daily": {
+						"1": [
+							"{@spell disintegrate|XPHB}",
+							"{@spell prismatic spray|XPHB}"
+						],
+						"3": [
+							"{@spell detect magic|XPHB}",
+							"{@spell dispel magic|XPHB}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The aquamentus can breathe air and water."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the aquamentus moves at least 10 feet straight toward a creature and then hits it with a gore attack on the same turn, that target takes an extra 11 ({@damage 2d10}) piercing damage and must succeed on a {@dc 23} Strength saving throw or be pushed 10 feet away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the aquamentus fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The aquamentus can use its Frightful Presence. It then makes three attacks: one with its bite or gore and two with its claws."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage, plus 10 ({@damage 3d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage, plus 10 ({@damage 3d6}) force damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}22 ({@damage 4d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Fire Rays {@recharge 5}",
+					"entries": [
+						"{@atk rs} {@hit 15} to hit, range 120ft. The aquamentus creates three rays of fire and hurls them at targets within range. The aquamentus can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 35 ({@damage 10d6}) fire damage."
+					]
+				},
+				{
+					"name": "Frightful Presence (Dragon)",
+					"entries": [
+						"Each creature of the aquamentus's choice that is within 120 feet of the aquamentus and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the aquamentus's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The aquamentus Can take 3 Legendary Actions, choosing from the options below. Only one legendary action can be used at a time, and only at the end of another creature's turn. Spent legendary Actions are regained at the start of each turn."
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The aquamentus makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The aquamentus makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack",
+					"entries": [
+						"(Costs 2 Actions): The aquamentus beats its wings. Each creature within 15 ft. of the aquamentus must succeed on a {@dc 23} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The aquamentus can then fly up to half its flying speed."
+					]
+				}
+			],
+			"dragonAge": "ancient",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O",
+				"P",
+				"R",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RA",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Ancient Argorok",
+			"shortName": "Argorok",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				24
+			],
+			"hp": {
+				"formula": "22d20 + 154",
+				"average": 385
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 25,
+			"int": 20,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"con": "+14",
+				"cha": "+11",
+				"dex": "+7",
+				"wis": "+9"
+			},
+			"skill": {
+				"insight": "+9",
+				"perception": "+9",
+				"persuasion": "+11",
+				"stealth": "+7",
+				"intimidation": "+11"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 19,
+			"languages": [
+				"Hylian",
+				"Draconic"
+			],
+			"cr": "22",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The argorok can breathe air and water."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the argorok fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The argorok can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage, plus 10 ({@damage 3d6}) force damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}22 ({@damage 4d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the argorok's choice that is within 120 feet of the argorok and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the argorok's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Steam Breath (Dragon Turtle)",
+					"entries": [
+						"The dragon exhales fire in a 90-foot cone. Each creature in that area must make a {@dc 24} Dexterity saving throw, taking 46 ({@damage 13d6}) fire damage and 46 ({@damage 13d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The aquamentus Can take 3 Legendary Actions, choosing from the options below. Only one legendary action can be used at a time, and only at the end of another creature's turn. Spent legendary Actions are regained at the start of each turn."
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The aquamentus makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The aquamentus makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack",
+					"entries": [
+						"(Costs 2 Actions): The aquamentus beats its wings. Each creature within 15 ft. of the aquamentus must succeed on a {@dc 23} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The aquamentus can then fly up to half its flying speed."
+					]
+				}
+			],
+			"dragonAge": "ancient",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N",
+				"O",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Anti-Fairy",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"S"
+			],
+			"type": "fey",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "1d6 - 2",
+				"average": 1
+			},
+			"speed": {
+				"fly": {
+					"number": 60,
+					"condition": "(hover, in straight lines)"
+				},
+				"canHover": true
+			},
+			"str": 2,
+			"dex": 20,
+			"con": 6,
+			"int": 10,
+			"wis": 14,
+			"cha": 15,
+			"passive": 12,
+			"immune": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"languages": [
+				"Fairy"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The anti-fairy has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Erratic Movement",
+					"entries": [
+						"The anti-fairy is an insane being that floats around aimlessly. Instead of moving towards a target, the anti-fairy moves in a straight line, bouncing off walls appropriately."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Touch",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) damage. The target must make a charisma saving throw. On a failed save, they lose 1 spell slot of the lowest level available."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Anubis",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "2d8",
+				"average": 9
+			},
+			"speed": {
+				"fly": {
+					"number": 60,
+					"condition": "(hover, mimicking another creature)"
+				},
+				"canHover": true
+			},
+			"str": 2,
+			"dex": 20,
+			"con": 10,
+			"int": 2,
+			"wis": 14,
+			"cha": 1,
+			"passive": 12,
+			"immune": [
+				{
+					"special": "All except fire"
+				}
+			],
+			"conditionImmune": [
+				{
+					"special": "All conditions"
+				}
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The anubis has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Mirrored Movement",
+					"entries": [
+						"The Anubis moves by mimicking another creature."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit -2} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d12 - 4}) piercing damage."
+					]
+				}
+			],
+			"reactionHeader": [
+				"The anubis may take a reaction to move as it mimics an opponent at any time."
+			],
+			"reaction": [
+				{
+					"name": "Fire Breath {@recharge 4}",
+					"entries": [
+						"Whenever a creature the anubis is mimicking the movement of is within 15 feet of it, it exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 14} Dexterity saving throw, taking 22 ({@damage 5d8}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Aquamentus Wyrmling",
+			"shortName": "Aquamentus",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"M"
+			],
+			"type": "dragon",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "7d8 + 7",
+				"average": 38
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 13,
+			"int": 14,
+			"wis": 11,
+			"cha": 13,
+			"save": {
+				"dex": "+3",
+				"con": "+3",
+				"wis": "+2",
+				"cha": "+3"
+			},
+			"skill": {
+				"perception": "+2",
+				"stealth": "+3"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Hylian",
+				"Draconic"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The aquamentus can breathe air and water."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage, plus 3 ({@damage 1d6}) force damage."
+					]
+				},
+				{
+					"name": "Fire Rays {@recharge 5}",
+					"entries": [
+						"{@atk rs} {@hit 4} to hit, range 60ft. The aquamentus creates three rays of fire and hurls them at targets within range. The aquamentus can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 7 ({@damage 2d6}) fire damage."
+					]
+				}
+			],
+			"dragonAge": "wyrmling",
+			"traitTags": [
+				"Amphibious",
+				"Charge",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"F",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RA"
+			]
+		},
+		{
+			"name": "Seahat",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"fly": 60,
+				"swim": 5
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 16,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The seahat deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}17 ({@damage 4d6 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/M-Schuhmacher/ZeldaHomebrew/b6eb3a39e9970ab79616d8634c5179e2a6d8166a/Assets/Seahat_token.png"
+			},
+			"traitTags": [
+				"Siege Monster"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Young Aquamentus",
+			"shortName": "Aquamentus",
+			"source": "SleepycobblersTheLegendofZeldaSourceBook",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "16d10 + 48",
+				"average": 136
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 19,
+			"dex": 12,
+			"con": 17,
+			"int": 16,
+			"wis": 13,
+			"cha": 15,
+			"save": {
+				"wis": "+4",
+				"cha": "+5",
+				"dex": "+4",
+				"con": "+6"
+			},
+			"skill": {
+				"deception": "+5",
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Hylian",
+				"Draconic"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The aquamentus can breathe air and water."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If the aquamentus moves at least 10 feet straight toward a creature and then hits it with a gore attack on the same turn, that target takes an extra 6 ({@damage 1d10}) piercing damage and must succeed on a {@dc 14} Strength saving throw or be pushed 10 feet away and knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The aquamentus makes three attacks: one with its bite or gore and two with its claws."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage, plus 7 ({@damage 2d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage, plus 7 ({@damage 2d6}) force damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Fire Rays {@recharge 5}",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120ft. The aquamentus creates three rays of fire and hurls them at targets within range. The aquamentus can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 14({@damage 4d6}) fire damage."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"dragonAge": "young",
+			"traitTags": [
+				"Amphibious",
+				"Charge",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"O",
+				"P",
+				"R",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RA",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
 		}
-  ]
+	]
 }
